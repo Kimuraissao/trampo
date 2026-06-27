@@ -1,0 +1,51 @@
+@charset "UTF-8";
+@media screen and (max-width: 576px){
+
+:root{
+    --corum: #F97316;
+    --cordois: #031752;
+    --cortres: azure;
+    --corquatro: rgba(0, 0, 0, 0.911);
+    --corcinco: #f97416a1;
+}
+
+    *{
+    margin: 0%;
+    Padding: 0%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#topo{
+    width: 100%;
+    Display: flex;
+    flex-flow: row nowrap;
+
+}
+
+#topo > h1{
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+#conteudo{
+    width: 100%;
+    background-color: var(--corcinco);
+    Display: flex;
+    flex-flow: column nowrap;
+}
+
+#intro{
+    
+    margin: 15px; 
+}
+
+#intro > h1{
+    color:var(--corquatro);
+}
+
+#intro > h2{
+    font-size: 1em;
+}
+
+}
