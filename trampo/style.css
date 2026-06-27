@@ -4,7 +4,7 @@
 :root{
     --corum: #F97316;
     --cordois: #031752;
-    --cortres: azure;
+    --cortres: rgb(253, 255, 255);
     --corquatro: rgba(0, 0, 0, 0.911);
     --corcinco: #f97416a1;
 }
@@ -12,9 +12,17 @@
     *{
     margin: 0%;
     Padding: 0%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    letter-spacing: -0.5px;
 }
 
+body{
+    background-color:var(--cortres);
+}
+
+
+/* header */
 #topo{
     width: 100%;
     Display: flex;
@@ -23,10 +31,21 @@
 }
 
 #topo > h1{
+    font-size: 3em;
     width: 100%;
     padding: 10px;
     text-align: center;
+    color: var(--cordois);
 }
+
+#topo > h1 > p{
+    color: var(--corum);
+    padding-bottom: 40px;
+    margin:-25px;
+    font-size: 0.6em;
+}
+
+/* o que fazemos */
 
 #conteudo{
     width: 100%;
@@ -36,16 +55,108 @@
 }
 
 #intro{
-    
-    margin: 15px; 
+    display:flex;
+    flex-flow:column nowrap;
+    width:100vw;
+    background-color: var(--cortres);
+    margin: 0px; 
+    padding: 5px;
 }
 
 #intro > h1{
-    color:var(--corquatro);
+    color:var(--cordois);
 }
 
 #intro > h2{
     font-size: 1em;
+    padding-top:5px;
+    color:var(--cordois);
+}
+
+#intro > ul{
+    display:flex;
+    flex-flow:row wrap;
+    color:rgba(46, 45, 45, 0.822);
+    list-style-position: inside;
+    justify-content: space-between;
+    padding-top: 5px;
+}
+
+#intro > ul > li{
+    width:50vw;
+    align-self:flex-start;
+}
+
+#intro > a{
+    align-self:center;
+    margin: 20px;
+    padding: 10px 20px; 
+    border: 1px solid rgba(0, 0, 0, 0.322);
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.404);
+    border-radius: 20px;
+    background-color: var(--corcinco);
+    color:var(--corquatro);
+    text-decoration: none;
+}
+
+#intro > a:hover{
+    align-self:center;
+    font-size: 1.1em;
+    margin: 20px;
+    padding: 10px 20px; 
+    border: 1px solid rgba(0, 0, 0, 0.322);
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.404);
+    border-radius: 20px;
+    background-color: var(--corcinco);
+    color:var(--corquatro);
+    text-decoration: none;
+}
+
+/* Mostrar como funciona */
+
+#exemplo{
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: var(--cortres);
+    color: var(--cordois);
+}
+
+#exemplo > h1{
+    text-align: center;
+    color:var(--corum);
+    padding:10px;
+}
+
+#exemplo > h2{
+    padding: 5px;
+}
+
+#exemplo > p{
+    padding: 5px;
+    color:rgba(46, 45, 45, 0.822);
+}
+
+#exemplo > div{
+    background-color:rgba(185, 183, 183, 0.233);
+    width: 70vw;
+    margin-left:50px;
+    padding:20px;
+    margin-top: 5px;
+    border-radius: 8px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.301);
+}
+
+#exemplo > div > p{
+    color:rgba(46, 45, 45, 0.822);
+}
+
+div#servico{
+    background-color: var(--cordois);
+    color:var(--corum);
+}
+
+div#servico > p{
+    color:var(--cortres)
 }
 
 }
