@@ -41,7 +41,7 @@ body{
 #topo > h1 > p{
     color: var(--corum);
     padding-bottom: 40px;
-    margin:-25px;
+    margin:-10px;
     font-size: 0.6em;
 }
 
